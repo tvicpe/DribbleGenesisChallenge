@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-md-offset-2">
+      <div *ngFor="let item of allItems" class="col-xs-12 col-sm-6 col-md-4 text-center">
+        <div class="shot-container  text-left">
+          <img src="{{item.images}}" alt="..." class="img-thumbnail">
+          <a class="over" routerLink="/shot/{{item.id}}">
+            <div><strong>{{item.title}}</strong></div>
+            <div class="description" [innerHTML]="item.description"></div>
+            <div class="date-container">{{item.published_at | date:'longDate'}}</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

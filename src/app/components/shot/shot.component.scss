@@ -1,0 +1,29 @@
+.antet {
+  p {
+    margin: 0;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  display: inline-block;
+  position: relative;
+  top: 25px;
+}
+
+.avatar {
+  img {
+    border-radius: 50%;
+  }
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.shot-image {
+  margin-top: 20px;
+}

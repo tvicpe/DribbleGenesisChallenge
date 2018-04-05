@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div *ngIf="shotDetails" class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+      <img src="{{shotDetails.images}}" class="img-thumbnail shot-image">
+      <div>
+        <div class="avatar"><img src="{{shotDetails.avatar_url}}"></div>
+        <div class="antet">
+          <p class="title">{{shotDetails.title}}</p>
+          <p>{{'by '+shotDetails.author}}</p>
+        </div>
+        <div class="description" innerHTML="{{shotDetails.description}}"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
