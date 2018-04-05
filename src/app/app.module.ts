@@ -4,7 +4,6 @@ import {AppComponent} from './app.component';
 import {ShotComponent} from './components/shot/shot.component';
 import {SixShotsComponent} from './components/six-shots/six-shots.component';
 import {HttpClientModule} from '@angular/common/http';
-import {RxPubSub} from 'rx-pubsub';
 import {ApiService} from './services/api.service';
 import {RoutingModule} from './modules/routing/routing.module';
 
@@ -20,7 +19,7 @@ import {RoutingModule} from './modules/routing/routing.module';
     HttpClientModule,
     RoutingModule
   ],
-  providers: [ApiService, RxPubSub],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
